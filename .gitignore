@@ -1,2 +1,25 @@
 node_modules
 build
+
+# Yarn berry files
+# We don't use Zero-Installs mode as we don't want to push the yarn cache to git.
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+
+.ijwb
+.DS_Store
+.idea
+.ipynb_checkpoints
+.vscode
+.project
+*.iml
+
+.eslintcache
+
+# TypeScript cache
+*.tsbuildinfo
